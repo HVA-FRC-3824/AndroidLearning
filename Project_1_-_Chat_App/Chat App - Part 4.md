@@ -1,11 +1,13 @@
 # Chat App - Part 4
 
+*This is based on resources developed by FRC Team 1678
+
 Welcome back! You are doing very well indeed, and I am pleased to announce that you have made it to the final stage of the process. But that does not mean that you are almost finished. No, this part may prove to be the most difficult. You must navigate APIs, networking, and a myriad of other ideas and concepts to accomplish this chat application.
 
-First things first, we will be using a service called Firebase. You can get to their website simply by clicking the following link. I also advise you follow the instructions that they provide so that you can integrate Firebase into your application. Your life will be a lot easier if you read through that whole guide before you start on this assignment. You don't need to understand it all immediately, but at least get a sense of it. You'll be referencing it a lot throughout this assignment:
+First things first, we will be using a service called Firebase. You can get to their website simply by clicking the following [link](https://firebase.google.com/). I also advise you follow the instructions that they provide so that you can integrate Firebase into your application. Your life will be a lot easier if you read through that whole guide before you start on this assignment. You don't need to understand it all immediately, but at least get a sense of it. You'll be referencing it a lot throughout this assignment:
 https://firebase.google.com/docs/android/setup.html
 
-It may be advisable to look into JSON, or Javascript Object Notation ( A way to conventiently transfer data ), since this is basically the structure that Firebase uses to store data.
+It may be advisable to look into JSON, or Javascript Object Notation ( A way to conveniently transfer data ), since this is basically the structure that Firebase uses to store data.
 
 Assuming you've done all the other assignments, which you should have, *cough* *cough*, you now have a way of displaying the chat messages. However, you're missing one thing...what could that be...oh yeah! Chat messages! Those are probably important. The problem is, we need to transfer these messages across multiple unconnected devices.
 
@@ -101,7 +103,7 @@ Nice job! Before we finish with this chat app, let's run through one final check
 7. Displays chat messages upon receiving them in the proper chronological order, showing both sender and message.
 8. All chat messages show up again when you leave the chatroom and then come back.
 9. You have bought all of the app programmers a proper bribe of candy. (Kidding. Kind of.)
-10. Test the app and debug until it meets your quality standards. For 1678 programmers, those can be found on the team google drive.
+#10. Test the app and debug until it meets your quality standards. For 1678 programmers, those can be found on the team google drive.
 
 Okay, if that all is done, then nice job!!!! Your app should work across as many devices as you can hook up to the chat system. I hereby confer upon you the title of "Novice App Programmer".
 
@@ -116,4 +118,4 @@ now make scouting system.
 
 kthxbai."
 
-See you all this season!
+But really there are some other projects.

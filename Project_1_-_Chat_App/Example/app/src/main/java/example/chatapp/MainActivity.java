@@ -15,7 +15,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 
 import java.util.ArrayList;
 
@@ -29,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static FirebaseDatabase database;
     public static DatabaseReference ref;
+    public static DatabaseReference chatroomRef;
 
     private ArrayList<String> rooms;
 
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
         database = FirebaseDatabase.getInstance();
         ref = database.getReference();
-
-        ref.child("chatrooms").addChildEventListener(new ChildEventListener() {
+        chatroomRef = ref.child("chatrooms");
+        chatroomRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Log.d(TAG, "onChildAdded" + dataSnapshot.getKey());
@@ -72,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
 
         ArrayAdapter<String> dropdownAdapter = new ArrayAdapter<>(this, android.R.layout.select_dialog_item, rooms);
         AutoCompleteTextView chatroomField = (AutoCompleteTextView)findViewById(R.id.chatroomNameEditText);
@@ -105,7 +103,8 @@ public class MainActivity extends AppCompatActivity {
 
         if(!rooms.contains(chatroomName))
         {
-            ref.child("chatrooms").child(chatroomName).push();
+            Log.d(TAG, "Adding chatroom: " + chatroomName);
+            chatroomRef.child(chatroomName).setValue("");
         }
 
         intent.putExtra(CHATROOM_NAME, chatroomName);

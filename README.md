@@ -22,13 +22,16 @@ Concepts to learn:
 - Bluetooth
 - Services
 
-## Project 3 - Create a custom scout view using preexisting views (default android ones)
+## Project 3 - Custom Views
 
-## Project 4 - Create a custom scout view using more than preexisting views
+- Create a custom scout view using preexisting views (default android ones)
+- Create a custom scout view using more than preexisting views
+
+## Project 4 - Graphs/Visual Displays
 
 ## Project 5 - Create a list of Match, Pit, and Super scout inputs for a game that you have not participated in
 The goal is to learn how to come up with what data needs to be collected, so that we do not have overlapping data or data that isn't useful for match strategy or alliance selection.
 
 ## Project 6 - Determine best way to visualize/compare teams using the match data input that you ended up with
 
-## Project 7 - 
+## Project 7 - Come up with ranking calculation for FirstPickAbility and SecondPickAbility based on us having an offensive robot

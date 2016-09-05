@@ -12,9 +12,9 @@ Team 111 ([WildStang](http://www.thebluealliance.com/team/111), whom if you don'
 
 ![image](../Images/wildrank_2015_2.png)
 
-Your goal for this assignment is to create an app, where the user can enter an arbitrary number of matches and for each match enter an arbitrary number of stacks. For each stack they need to be able to put in number of totes (0-6), whether there was a container on top, and whether there was a noodle in it. These can span multiple activities if needed. If you want to be fancy you can also have them input if the container was upright or on its side and have that displayed differently.
+Your goal for this assignment is to create an app, where the user can enter an arbitrary number of matches and for each match enter an arbitrary number of stacks. For each stack they need to be able to put in a number of totes (0-6), whether there was a container on top, and whether there was a noodle in it. These can span multiple activities if needed. If you want to be fancy you can also have them input if the container was upright or on its side and have that displayed differently.
 
-The inputs you should be able to handle already, since you completed all the other projects. For the display there are a couple things you will need. The first are `Paints`. These will control the color of any drawn shapes. The other is an onDraw method.
+The inputs you should be able to handle already. For the display there are a couple things you will need. The first are `Paints`. These will control the color of any drawn shapes. The other is an `onDraw` method.
 
 ```java
 @Override
@@ -24,7 +24,7 @@ public void onDraw(Canvas c)
 }
 ```
 
-Using the canvas you can draw a number of shapes such as rectangles, circles, lines, ovals, etc.
+Using the `Canvas` you can draw a number of shapes such as rectangles, circles, lines, ovals, etc.
 
 **Hint**: you will want the width of your totes to be based on the number of columns and the size of your view. The height can be a constant ratio that is multiplied by the width.
 

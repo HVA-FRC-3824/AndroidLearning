@@ -19,7 +19,7 @@ LayoutInflater inflater = LayoutInflater.from(context);
 inflater.inflate(R.layout.your_layout, this);
   ```
 
-Once you have inflated the layout you will need to setup your label. The goal is that someone can use your widget and there would be an attribute that they set to the text for their widget. To set up attributes you need to open `attrs.xml` under values. If it doesn't exist then you should create it. It should look like this:
+Once you have inflated the layout you will need to setup your label. The goal is that someone can use your widget and there would be an attribute that they set to the text for their widget's label. To set up attributes you need to open `attrs.xml` under values. If it doesn't exist then you should create it. It should look like this:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -45,4 +45,4 @@ TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ClassN
 String labelText = typedArray.getString(R.styleable.ClassName_AttributeName);
 ```
 
-Once you have all this the rest is just tweating the layout to make it look better.
+Once you have all this the rest is just tweaking the layout to make it look better.
